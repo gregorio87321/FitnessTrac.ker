@@ -19,8 +19,6 @@
       "last 1 safari version"
     ]
   },
-  
-
   "name": "fitnesstrac.kr_front-end",
   "description": "",
   "version": "1.0.0",
@@ -29,7 +27,6 @@
     "start": "CHOKIDAR_USEPOLLING=true react-scripts start",
     "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1"
-    
   },
   "repository": {
     "type": "git",
@@ -39,5 +36,3 @@
   "author": "",
   "license": "ISC"
 }
-
-
