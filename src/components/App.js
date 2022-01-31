@@ -23,9 +23,7 @@ const App = () => {
   };
 
   const fetchRoutines = async () => {
-    const {
-      data: { routines },
-    } = await callApi({
+    const routines = await callApi({
       url: "/routines",
     });
     return routines;
@@ -56,9 +54,7 @@ const App = () => {
   };
 
   const fetchActivities = async () => {
-    const {
-      data: { activities },
-    } = await callApi({
+    const activities = await callApi({
       url: "/activities",
     });
     return activities;
@@ -68,8 +64,6 @@ const App = () => {
     const activities = await fetchActivities();
     setActivities(activities);
   }, []);
-
-
 
   return (
     <Router>
@@ -121,7 +115,11 @@ const App = () => {
           <Routines token={token} routines={routines} userData={userData} />
         </Route>
         <Route path="/activities">
-          <Activities token={token} activities={activities} userData={userData} />
+          <Activities
+            token={token}
+            activities={activities}
+            userData={userData}
+          />
         </Route>
         {/* /* <Route path="/post/:postId">
         <SinglePost posts={posts} token={token} userData={userData} setPosts={setPosts}/>

@@ -3,7 +3,6 @@ import { Link, useHistory } from 'react-router-dom';
 import { callApi } from '../api';
 
 const AccountForm = ({ action, setToken, setUserData }) => {
- console.log(action)
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const isLogin = action === 'login';

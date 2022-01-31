@@ -98,5 +98,29 @@ h2 {
   display: flex;
   flex-direction: column;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 150px;
+  font-size: 50px;
+}
+
+.routines {
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 40px;
+  border-bottom: black solid 3px;
+}
+
+
+.allActivities{
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
+}
+
+.activities {
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 40px;
+  border-bottom: black solid 3px;
 }
